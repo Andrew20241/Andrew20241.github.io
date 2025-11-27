@@ -3,4 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Home
 ---
+
+
+# Hi, I'm Your Name 👋
+Welcome to my personal site — a place for my bio, projects, and blog.
