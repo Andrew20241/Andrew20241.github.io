@@ -29,9 +29,10 @@ title: Home
 <div class="projects-container">
   <h2>Featured Projects</h2>
   
-  {% if site.posts.size > 0 %}
+  {% assign project_posts = site.posts | where_exp: "post", "post.categories contains 'projects'" %}
+  {% if project_posts.size > 0 %}
     <div class="projects-list">
-      {% for post in site.posts %}
+      {% for post in project_posts limit: 3 %}
         <article class="project-card">
           <h3 class="project-title">
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -44,5 +45,11 @@ title: Home
     </div>
   {% else %}
     <p class="no-posts">No projects yet. Check back soon!</p>
+  {% endif %}
+  
+  {% if project_posts.size > 3 %}
+    <div class="view-all">
+      <a href="{{ '/projects/' | relative_url }}" class="view-all-link">View All Projects →</a>
+    </div>
   {% endif %}
 </div>
