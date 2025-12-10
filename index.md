@@ -9,7 +9,7 @@ title: Home
     <img src="{{ site.author.image | relative_url }}" alt="Profile" class="profile-image">
     {% endif %}
     <h1>{{ site.author.name }}</h1>
-    <p class="profile-bio">Software Developer & Project Enthusiast</p>
+    <p class="profile-bio">"In theory, theory and practice are the same. In practice, they are not" - Albert Einstein</p>
     
     <div class="social-links">
       {% if site.social.github %}
@@ -22,7 +22,7 @@ title: Home
 
   <div class="about-section">
     <h2>About</h2>
-    <p>Welcome to my portfolio! I'm passionate about building interesting projects and sharing my work. Here you'll find a collection of my recent projects and explorations in software development.</p>
+    <p>Welcome to my website, I am a Computer Science @ Georgia Tech. In the project section of the website, it will describe about the projects that I have been working on and completed</p>
   </div>
 </div>
 

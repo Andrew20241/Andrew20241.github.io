@@ -6,7 +6,7 @@ permalink: /projects/
 
 <div class="projects-container">
   <h1>My Projects</h1>
-  <p class="projects-intro">Here's a collection of my recent projects and work.</p>
+  <p class="projects-intro">Collection of projects and work.</p>
 
   {% assign project_posts = site.posts | where_exp: "post", "post.categories contains 'projects'" %}
   {% if project_posts.size > 0 %}
