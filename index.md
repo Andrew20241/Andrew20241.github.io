@@ -19,9 +19,4 @@ title: Home
       {% endif %}
     </div>
   </div>
-
-  <div class="about-section">
-    <h2>About</h2>
-    <p>Welcome to my website, I am a Computer Science @ Georgia Tech.</p>
-  </div>
 </div>
